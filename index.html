@@ -16,79 +16,85 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>Weather Up</h1>
-        <br />
-        <form id="search-form">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="search"
-                placeholder="Enter City"
-                autofocus="on"
-                autocomplete="off"
-                class="form-control shadow-sm"
-                id="input-city"
-              />
-            </div>
-            <div class="col-3" id="submit-button">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-primary shadow.sm"
-              />
-            </div>
-            <div class="col-3">
-              <button class="btn btn-success w-100" id="current-button">
-                Current
-              </button>
-            </div>
-          </div>
-        </form>
-        <br />
-        <ul>
-          <li id="date"></li>
-          <li id="time"></li>
-        </ul>
-        <div>
-          <h2 id="your-city"></h2>
-        </div>
-        <div class="weather-info">
-          <span id="weather-description"> </span>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <h1>Weather Up</h1>
           <br />
-          <span id="temperature"> </span>
-          <span
-            ><a href="#" id="celsius-link">°C</a> /
-            <a href="#" id="fahrenheit-link">°F</a></span
-          >
-          <div>Humidity: <span id="humidity">77</span>%</div>
-          <div>Wind: <span id="wind"> 8</span> km/h</div>
-        </div>
-        <br />
-        <br />
-        <div class="row">
-          <div class="float-end">
-            <ul>
-              <li><em>5-Day Forecast</em></li>
-              <hr />
-              <li><strong>Saturday</strong> ☀️ H 17° L 7°</li>
-              <hr />
-              <li><strong>Sunday</strong> 🌤 H 16° L 6°</li>
-              <hr />
-              <li><strong>Monday</strong> 🌧 H 8° L 6°</li>
-              <hr />
-              <li><strong>Tuesday</strong> 🌧 H 14° L 8°</li>
-              <hr />
-              <li><strong>Wednesday</strong> 🌧 H 13° L 6°</li>
-            </ul>
+          <form id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Enter City"
+                  autofocus="on"
+                  autocomplete="off"
+                  class="form-control shadow-sm"
+                  id="input-city"
+                />
+              </div>
+              <div class="col-3" id="submit-button">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow.sm"
+                />
+              </div>
+              <div class="col-3">
+                <button class="btn btn-success w-100" id="current-button">
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+          <br />
+          <ul>
+            <li id="date"></li>
+            <li id="time"></li>
+          </ul>
+          <div>
+            <h2 id="your-city"></h2>
+          </div>
+          <div class="weather-info">
+            <span id="weather-description"> </span>
+            <div calss="clearfix weather-temperature">
+              <img src="" alt="" id="icon" class="float-left" />
+
+              <strong id="temperature"> </strong
+              ><span class="units">
+                <a href="#" id="celsius-link" class="active">°C</a> /
+                <a href="#" id="fahrenheit-link">°F</a></span
+              >
+            </div>
+            <div>Humidity: <span id="humidity">77</span>%</div>
+            <div>Wind: <span id="wind"> 8</span> km/h</div>
+          </div>
+          <br />
+          <br />
+          <div class="row">
+            <div class="float-end">
+              <ul>
+                <li><em>5-Day Forecast</em></li>
+                <hr />
+                <li><strong>Saturday</strong> ☀️ H 17° L 7°</li>
+                <hr />
+                <li><strong>Sunday</strong> 🌤 H 16° L 6°</li>
+                <hr />
+                <li><strong>Monday</strong> 🌧 H 8° L 6°</li>
+                <hr />
+                <li><strong>Tuesday</strong> 🌧 H 14° L 8°</li>
+                <hr />
+                <li><strong>Wednesday</strong> 🌧 H 13° L 6°</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <p>
-      <a href="https://github.com/begazj/weather-up-app">Open source code</a> by
-      Jen Begazo
-    </p>
+    <small>
+      <a href="https://github.com/begazj/weather-up-app">Open source code</a>
+      by Jen Begazo
+    </small>
+
     <script src="src/index.js"></script>
   </body>
 </html>
