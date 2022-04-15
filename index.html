@@ -49,53 +49,52 @@
           <br />
           <ul>
             <li id="date"></li>
-            <li id="time"></li>
+            <li id="time">Last updated: </li>
+            <li class="city-choice" id="your-city"></li>
+            <li id="weather-description"></li>
           </ul>
-          <div>
-            <h2 id="your-city"></h2>
-          </div>
-          <div class="weather-info">
-            <span id="weather-description"> </span>
-            <div calss="clearfix weather-temperature">
-              <img src="" alt="" id="icon" class="float-left" />
-              <div class="float-left">
-                <strong id="temperature" class="weather-temperature"> </strong
-                ><span class="units">
-                  <a href="#" id="celsius-link" class="active">°C</a> /
-                  <a href="#" id="fahrenheit-link">°F</a></span
-                >
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="" id="icon" class="float-left" />
+                  <span id="temperature">12</span
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
               </div>
             </div>
-            <div>Humidity: <span id="humidity"></span>%</div>
-            <div>Wind: <span id="wind"></span> km/h</div>
-          </div>
-          <br />
-          <br />
-          <div class="row">
-            <div class="float-end">
-              <ul>
-                <li><em>5-Day Forecast</em></li>
-                <hr />
-                <li><strong>Saturday</strong> ☀️ H 17° L 7°</li>
-                <hr />
-                <li><strong>Sunday</strong> 🌤 H 16° L 6°</li>
-                <hr />
-                <li><strong>Monday</strong> 🌧 H 8° L 6°</li>
-                <hr />
-                <li><strong>Tuesday</strong> 🌧 H 14° L 8°</li>
-                <hr />
-                <li><strong>Wednesday</strong> 🌧 H 13° L 6°</li>
+            <div class="col-6">
+              <ul class="weather-details">
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
+            <br /> 
+          <br />
+          <div>
+            <ul class="forecast">
+              <li><em>5-Day Forecast</em></li>
+              <hr />
+              <li><strong>Saturday</strong> ☀️ H 17° L 7°</li>
+              <hr />
+              <li><strong>Sunday</strong> 🌤 H 16° L 6°</li>
+              <hr />
+              <li><strong>Monday</strong> 🌧 H 8° L 6°</li>
+              <hr />
+              <li><strong>Tuesday</strong> 🌧 H 14° L 8°</li>
+              <hr />
+              <li><strong>Wednesday</strong> 🌧 H 13° L 6°</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+   
     <small>
       <a href="https://github.com/begazj/weather-up-app">Open source code</a>
       by Jen Begazo
     </small>
-
+     </div>
     <script src="src/index.js"></script>
   </body>
 </html>
