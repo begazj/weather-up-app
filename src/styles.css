@@ -14,16 +14,10 @@ ul {
 li {
   list-style: none;
 }
-strong {
-  font-size: 60px;
-}
 
 hr {
   width: 50%;
   display: inline-block;
-}
-small {
-  text-decoration: none;
 }
 .container {
   margin: 5;
@@ -45,4 +39,8 @@ small {
 
 .weather-info {
   font-size: 20px;
+}
+
+.weather-temperature {
+  font-size: 60px;
 }
