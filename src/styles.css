@@ -48,20 +48,21 @@ hr {
 }
 
 .city-choice {
-  font-size: 40px;
+  font-size: 38px;
 }
 .weather-info {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .weather-temperature {
-  font-size: 60px;
+  font-size: 55px;
   position: relative;
+  top: 8px;
 }
 .units {
   position: relative;
   font-size: 16px;
-  top: -32px;
+  top: -27px;
   text-decoration: none;
 }
 
@@ -85,8 +86,24 @@ hr {
   text-align: center;
 }
 
+#weather-description {
+  font-style: italic;
+}
+
 #current-button {
   background: #eb6e4b;
   border: #eb6e4b;
   height: 38px;
+}
+
+#icon {
+  position: relative;
+  top: -4px;
+  right: -20px;
+}
+#celsius-link {
+  text-decoration: none;
+}
+#fahrenheit-link {
+  text-decoration: none;
 }
