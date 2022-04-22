@@ -91,9 +91,8 @@ hr {
 }
 
 #current-button {
-  background: #eb6e4b;
-  border: #eb6e4b;
-  height: 38px;
+  background-color: #eb6e4b;
+  border-color: #eb6e4b;
 }
 
 #icon {
